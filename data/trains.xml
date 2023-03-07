@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+    <!-- 
+        ADDED TRAIN FOR TESTING metrotrain2, id 27
+    -->
+<train_configs version = "1">
+    <train_config 
+			name = "metro_config1"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			carriage_gap = "-0.5">
+			
+			<carriage
+					model_name = "metrotrain2"
+					max_peds_per_carriage = "4"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.4"
+			repeat_count = "1" />
+			<carriage
+					model_name = "metrotrain2"
+					max_peds_per_carriage = "4"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.4"
+			repeat_count = "1" />				
+	</train_config>	
+
+	<train_config_group name = "metro_group">
+        <train_config_ref name = "metro_config1" />
+	</train_config_group>
+</train_configs>
